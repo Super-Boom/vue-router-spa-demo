@@ -1,13 +1,21 @@
 <template>
   <div id="app">
     <!-- <navList></navList> -->
-    <router-view></router-view>
+    <router-view @func="func"></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  mounted(){
+    
+  },
+  methods:{
+    func(){
+      console.log('my name is xzg');
+    }
+  }
 }
 </script>
 

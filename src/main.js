@@ -5,12 +5,14 @@ Vue.use(VueRouter);
 import index from './components/index.vue';
 import hello from './components/hello.vue';
 import navList from './components/navList.vue';
+import battery from './components/battery.vue';
 //定义路由
 const routes = [
   { path: '/', component: App },
   { path: '/navList', component: navList },
   { path: '/index', component: index },
-  { path: '/hello', component: hello }
+  { path: '/hello', component: hello },
+  {path:'/battery',component:battery}
 ]
 //创建 router 实例，然后传 routes 配置
 const router = new VueRouter({
